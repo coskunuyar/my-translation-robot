@@ -1,0 +1,12 @@
+{
+  "name": "my-translation-robot",
+  "version": "1.0.0",
+  "description": "my-translation-robot with node.",
+  "main": "index.js",
+  "author": "Coskun Uyar",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "puppeteer": "^10.0.0"
+  }
+}
