@@ -15,6 +15,9 @@ class Robot {
 
     puppeteer.launch({ headless: false }).then(async (browser) => {
       this.page = await browser.newPage();
+      await this.page.setExtraHTTPHeaders({
+        'Accept-Language': 'en'
+      });
       await this.page.setViewport({ width: 1366, height: 2000 });
       await this.page.goto(
         `https://translate.google.com/?sl=${from}&tl=${to}&op=translate`,
